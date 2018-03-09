@@ -1,0 +1,15 @@
+@import "./dependencies.scss";
+
+[class*="a-link"] {
+    font-family:    $a-link-font-family;
+    font-size:      $a-link-font-size;
+    font-weight:    $a-link-font-weight;
+    line-height:    $a-link-line-height;
+    display:        $a-link-display;
+    border:         $a-link-border;
+    padding-top:    $a-link-padding-top;
+    padding-right:  $a-link-padding-right;
+    padding-bottom: $a-link-padding-bottom;
+    padding-left:   $a-link-padding-left;
+
+}

@@ -1,0 +1,9 @@
+@import "./dependencies.scss";
+
+[class*="a-panel"] {
+    background-color:   $a-panel-background-color;
+    color:              $a-panel-color;
+    font-family:        $a-panel-font-family;
+    padding-left:       $a-panel-padding-left;
+    padding-left:       $a-panel-padding-right;
+}

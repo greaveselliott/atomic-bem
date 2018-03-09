@@ -1,0 +1,75 @@
+[class*="m-tabs"] {
+
+    // Non inheritable
+    &:not([class*="__"]) {
+        background-color: $global-color-shade-4;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+
+        &:before {
+            border-radius: 100%;
+            box-shadow: 1px 3px 5px 0 $global-color-shade-2;
+            content: "";
+            height: 5px;
+            left: 10%;
+            position: absolute;
+            top: 48px;
+            width: 80%;
+        }
+    }
+    
+    &[class*="__a-link"] {
+        align-items: center;
+        background-color: inherit;
+        cursor: pointer;
+        display: flex;
+        flex: 1;
+        height: 53px;
+        justify-content: center;
+        margin-bottom: 24px;
+        order: 0;
+        outline: none;
+        position: relative;
+
+        &[class*="--active"] {
+            font-weight: 700;
+
+            &:before {
+                padding: 10px;
+                top: calc(100% - 10px);
+            }
+        }
+
+        &:before {
+            background-color: inherit;
+            box-shadow: inset 3px 3px 5px hsla(280, 4%, 69%, 0.30);
+            content: "";
+            display: block;
+            left: 50%;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+            transform: translateX(-50%) rotate(45deg);
+            transition: padding 600ms $global-easing-bounce, top 600ms $global-easing-bounce;
+            z-index: 2;
+        }
+    }
+
+    &[class*="__a-panel"] {
+        background-color: inherit;
+        display: none;
+        flex: 0;
+        flex-basis: 100%;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        order: 1;
+
+        &[class*="--active"] {
+            display: block;
+        }
+    }
+}
