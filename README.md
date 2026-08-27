@@ -1,6 +1,10 @@
 Webpack 3 Boilerplate
 ===========
 
+> [!IMPORTANT]
+> This repository was archived on 27 August 2026. It is a complete but
+> unmaintained Webpack 3 and Sass experiment retained for historical reference.
+
 [![Dependency Status](https://david-dm.org/cvgellhorn/webpack-boilerplate.svg)](https://david-dm.org/cvgellhorn/webpack-boilerplate) 
 [![devDependency Status](https://david-dm.org/cvgellhorn/webpack-boilerplate/dev-status.svg)](https://david-dm.org/cvgellhorn/webpack-boilerplate)
 
